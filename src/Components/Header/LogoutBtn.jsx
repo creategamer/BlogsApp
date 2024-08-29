@@ -11,7 +11,6 @@ function LogoutBtn() {
         try {
 
             await authService.logout();
-            window.location.reload();
             dispatch(logout());
         } catch (error) {
             console.error("Logout error:", error);
